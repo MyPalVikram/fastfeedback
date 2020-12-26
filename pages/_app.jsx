@@ -1,3 +1,4 @@
+import React from 'react';
 import { ChakraProvider, CSSReset } from '@chakra-ui/react';
 import { css, Global } from '@emotion/react';
 

@@ -1,4 +1,4 @@
-import { auth } from 'firebase';
+import React from 'react';
 
 import { useAuth } from '../lib/auth';
 import EmptyState from '../components/EmptyState';

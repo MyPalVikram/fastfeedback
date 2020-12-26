@@ -1,6 +1,5 @@
-import Head from 'next/head';
-import { auth } from 'firebase';
-import { Button, Flex, Heading, Icon } from '@chakra-ui/react';
+import React from 'react';
+import { Button, Flex } from '@chakra-ui/react';
 
 import { useAuth } from '../lib/auth';
 import DarkModeSwitch from '../components/DarkModeSwitch';
@@ -24,7 +23,7 @@ export default function Home() {
           colorScheme='red'
           variant='solid'
           fontWeight='medium'
-          onClick={(e) => auth.signout()}
+          onClick={() => auth.signout()}
         >
           Sign Out
         </Button>
@@ -33,7 +32,7 @@ export default function Home() {
           colorScheme='green'
           variant='solid'
           fontWeight='medium'
-          onClick={(e) => auth.signinWithGithub()}
+          onClick={() => auth.signinWithGithub()}
         >
           Sign In
         </Button>
